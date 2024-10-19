@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  color: white;
+  height: 38px;
+  width: 100%;
+  padding-left: 104px;
+  padding-right: 104px;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 4px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.underline {
+  font-size: 14px;
+  text-decoration: underline;
+  
+}
+
+.image {
+  margin-top: 6px;
+}
