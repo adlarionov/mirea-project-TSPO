@@ -13,10 +13,10 @@ export default function FirstOrderSale() {
     <div className={styles.container}>
       <div className={styles.textContainer}>
         <p className={styles.text}>
-          Sign up and get 20% off to your first order.
+          Зарегистрируйтесь и получите скидку 20% на первый заказ.
         </p>
-        <Link href="/shop/register" className={styles.underline}>
-          Sign Up Now
+        <Link href="/profile/register" className={styles.underline}>
+          Зарегистрироваться
         </Link>
       </div>
       <button onClick={() => setIsVisible(false)}>

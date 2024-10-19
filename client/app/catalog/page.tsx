@@ -1,4 +1,4 @@
-import LogoTitle from "../components/Logo";
+import LogoTitle from "../shared/Logo";
 
 export default function Catalog() {
   return (
