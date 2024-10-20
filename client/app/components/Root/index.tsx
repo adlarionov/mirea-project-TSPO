@@ -1,3 +1,4 @@
+import BrandsLine from "../BrandsLine";
 import FirstOrderSale from "../FirstOrderSale";
 import Header from "../Header";
 import Hero from "../Hero";
@@ -8,6 +9,7 @@ export default function Root() {
       <FirstOrderSale />
       <Header />
       <Hero />
+      <BrandsLine />
     </>
   );
 }

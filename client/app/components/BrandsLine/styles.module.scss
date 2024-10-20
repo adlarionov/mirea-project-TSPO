@@ -1,0 +1,14 @@
+.rollingContainer {
+  transform: translateX(100%);
+  animation: rollingAnimation 25s linear infinite;
+}
+
+@keyframes rollingAnimation {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
