@@ -3,9 +3,11 @@
 import Image from "next/image";
 import React from "react";
 import Star from "@/utils/icons/star.svg";
+
 import classes from "./styles.module.scss";
 import classNames from "classnames";
-import { integralCF } from "@/utils/font";
+
+import { micra } from "@/utils/font";
 import { Button } from "@/ui/button";
 import HeroCard from "./components/HeroCard";
 
@@ -21,23 +23,23 @@ export default function Hero() {
         <Image
           src={Star}
           alt="star icon"
-          className="absolute left-[52%] top-[40%] w-[5%]"
+          className={classNames("absolute left-[52%] top-[40%] w-[5%]")}
         />
         <Image
           src={Star}
           alt="star icon"
-          className="absolute left-[85%] top-[10%] w-[8%]"
+          className={classNames("absolute left-[85%] top-[10%] w-[8%]")}
         />
         <div className="mt-24 ml-28">
           <h1
             className={classNames(
-              "text-[64px] max-w-[35%] leading-[64px] mb-8",
-              integralCF.className
+              "text-[64px] max-w-[40%] leading-[64px] mb-8",
+              micra.className
             )}
           >
-            FIND CLOTHES THAT MATCHES YOUR STYLE
+            Одежда для каждого
           </h1>
-          <p className="max-w-[35%] opacity-60 mb-8">
+          <p className="max-w-[40%] opacity-60 mb-8">
             Просмотрите наш разнообразный ассортимент тщательно созданной
             одежды, призванной подчеркнуть вашу индивидуальность и удовлетворить
             ваше чувство стиля.

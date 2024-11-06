@@ -29,7 +29,7 @@ export default function Header() {
   return (
     <header className="flex items-center px-24 py-9 gap-10 w-full">
       <LogoTitle />
-      <div className="mt-3 flex items-center gap-6">
+      <div className="flex items-center gap-6">
         <Dropdown
           dropdownButton={DropdownButton}
           isDropDownOpened={isDropDownOpened}
@@ -43,9 +43,9 @@ export default function Header() {
       <Input
         type="text"
         placeholder="Найти продукт..."
-        className=" min-w-[300px] mt-3"
+        className=" min-w-[300px]"
       />
-      <div className="flex items-center gap-3 mt-3">
+      <div className="flex items-center gap-3">
         <Link href="/cart">
           <ShoppingCart />
         </Link>

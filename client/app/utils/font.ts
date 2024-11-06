@@ -6,7 +6,7 @@ export const inter = Inter({
   display: "auto",
 });
 
-export const integralCF = localFont({
-  src: "./fonts/IntegralCF-Bold.woff2",
+export const micra = localFont({
+  src: "./fonts/Micra-Bold.woff2",
   display: "swap",
 });

@@ -1,5 +1,6 @@
 .bgHero {
   background: url('../../utils/images/hero-bg.png') no-repeat;
+  object-fit: cover;
   display: block;
   background-size: cover;
 }
