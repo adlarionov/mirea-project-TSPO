@@ -7,7 +7,7 @@ import { useState } from "react";
 import LogoTitle from "../../shared/Logo";
 import Link from "next/link";
 import Dropdown from "../../shared/Dropdown";
-import { DropdownItem } from "../../types";
+import { DropdownItem } from "../../types/components";
 import { ChevronDown, ChevronUp } from "lucide-react";
 
 const dropdownItems: DropdownItem[] = [

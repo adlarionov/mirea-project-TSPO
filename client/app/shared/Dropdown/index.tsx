@@ -6,7 +6,7 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
 } from "../../../components/ui/dropdown-menu";
-import { DropdownItem } from "../../types";
+import { DropdownItem } from "../../types/components";
 
 interface Dropdown {
   isDropDownOpened: boolean;
