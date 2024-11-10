@@ -41,7 +41,7 @@ export default function CatalogListItem({ good }: { good: Good }) {
           <h4 className="font-bold text-xl">{parsedPrice}</h4>
           {good.discount ? (
             <>
-              <h4 className="font-bold line-through text-xl text-gray-500">
+              <h4 className="font-bold line-through text-2xl text-gray-500">
                 {good.price}
                 {usedCurrency}
               </h4>
