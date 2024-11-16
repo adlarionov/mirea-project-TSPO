@@ -14,7 +14,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 export default function Feedback() {
   return (
-    <div className="px-24">
+    <div className="px-24 mb-20">
       <div className="mb-10">
         <h1 className={classNames(micra.className, "text-[32px]")}>
           Наши довольные покупатели

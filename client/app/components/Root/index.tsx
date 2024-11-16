@@ -6,6 +6,7 @@ import Header from "../Header";
 import Hero from "../Hero";
 import DressStyles from "../DressStyles";
 import Feedback from "../Feedback";
+import Footer from "../Footer";
 
 export default function Root() {
   return (
@@ -18,6 +19,7 @@ export default function Root() {
       <CatalogPreview title="Бестселлеры" goods={goods} />
       <DressStyles />
       <Feedback />
+      <Footer />
     </>
   );
 }
