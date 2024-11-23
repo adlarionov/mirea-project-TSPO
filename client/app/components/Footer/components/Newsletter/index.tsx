@@ -16,7 +16,7 @@ export default function Newsletter() {
   };
 
   return (
-    <div className="flex justify-between items-center px-16 py-10 bg-black rounded-2xl absolute left-52 right-52 -top-1/4 ml-auto mr-auto">
+    <div className="flex justify-between items-center px-16 py-10 bg-black rounded-2xl absolute left-52 right-52 -top-1/4 ml-auto mr-auto mb-12">
       <h1 className={classNames(micra.className, "text-2xl text-white w-3/5")}>
         Оставаться в курсе последних новостей
       </h1>
