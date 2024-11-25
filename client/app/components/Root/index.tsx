@@ -1,3 +1,4 @@
+"use client";
 import { goods } from "@/utils/mocks/goods";
 import BrandsLine from "../BrandsLine";
 import CatalogPreview from "../CatalogPreview";
