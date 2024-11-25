@@ -27,9 +27,11 @@ export default function CatalogListItem({ good }: { good: Good }) {
       <div className="flex flex-col gap-1">
         <h3>{good.title}</h3>
         <div className="flex gap-1">
-          {Array(Math.floor(good.rating)).fill(
-            <Image src={RatingStar} alt={RatingStar} />
-          )}
+          {Array(Math.floor(good.rating))
+            .fill(0)
+            .map((_, idx) => (
+              <Image key={idx} src={RatingStar} alt={RatingStar} />
+            ))}
           {good.rating % 1 !== 0 ? (
             <Image src={RatingStarHalf} alt={RatingStarHalf} />
           ) : null}
