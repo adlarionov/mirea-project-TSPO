@@ -1,7 +1,7 @@
 import React from "react";
 import { micra } from "@/utils/font";
 import classNames from "classnames";
-import { Good } from "@/types";
+import { Good } from "@/types/product";
 import CatalogListItem from "./components/CatalogListItem";
 import { Button } from "@/ui/button";
 

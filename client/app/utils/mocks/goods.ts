@@ -1,4 +1,4 @@
-import { Good } from "@/types";
+import { Good } from "@/types/product";
 import Clothes from "@/utils/images/clothes.png";
 import Clothes1 from "@/utils/images/clothes-1.png";
 import Clothes2 from "@/utils/images/clothes-2.png";

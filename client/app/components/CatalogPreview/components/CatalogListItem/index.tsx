@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 // Types
-import { Good } from "@/types";
+import { Good } from "@/types/product";
 // Utils
 import RatingStar from "@/utils/icons/rating-star.svg";
 import RatingStarHalf from "@/utils/icons/rating-star-half.svg";

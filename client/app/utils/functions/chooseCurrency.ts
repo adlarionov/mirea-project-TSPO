@@ -1,4 +1,4 @@
-import { Currency } from "@/types";
+import { Currency } from "@/types/product";
 
 export default function chooseCurrency(currency: Currency) {
   switch (currency) {

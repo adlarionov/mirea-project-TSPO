@@ -15,7 +15,7 @@ export default function FirstOrderSale() {
         <p className={styles.text}>
           Зарегистрируйтесь и получите скидку 20% на первый заказ.
         </p>
-        <Link href="/profile/register" className={styles.underline}>
+        <Link href="/register" className={styles.underline}>
           Зарегистрироваться
         </Link>
       </div>

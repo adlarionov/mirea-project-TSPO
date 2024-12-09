@@ -17,8 +17,6 @@ export default function Comment({
 }) {
   const rating = 5;
 
-  Array(rating).map((star, idx) => console.log(star, idx));
-
   return (
     <div className="border border-gray-200 rounded-2xl px-8 pt-6 pb-12 mb-20">
       <div className="flex gap-1 mb-4">

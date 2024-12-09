@@ -12,3 +12,15 @@ export interface Good {
 }
 
 export type Currency = "USD" | "RUB" | "EUR";
+
+export interface Product {
+  ID: number;
+  CreatedAt: string;
+  UpdatedAt: string;
+  DeletedAt: string | null;
+  name: string;
+  description: string;
+  price: number;
+  currency: Currency;
+  quantity: number;
+}
