@@ -1,7 +1,7 @@
 // api
 import { baseIntance, URLs } from "../instance";
 // components
-import { toast } from "react-toastify";
+import { toast } from "react-hot-toast";
 import { Product } from "@/types/product";
 
 async function getProducts(): Promise<Product[] | null> {
@@ -10,7 +10,7 @@ async function getProducts(): Promise<Product[] | null> {
     return data;
   } catch (reqError) {
     if (typeof reqError === "string")
-      toast(reqError, { type: "error", position: "top-right" });
+      toast.error(reqError, { position: "top-right" });
     return null;
   }
 }
@@ -23,7 +23,7 @@ async function getProduct(productId: number): Promise<Product | null> {
     return data;
   } catch (reqError) {
     if (typeof reqError === "string")
-      toast(reqError, { type: "error", position: "top-right" });
+      toast.error(reqError, { position: "top-right" });
     return null;
   }
 }
@@ -40,7 +40,7 @@ async function updateProduct(
     return data;
   } catch (reqError) {
     if (typeof reqError === "string")
-      toast(reqError, { type: "error", position: "top-right" });
+      toast.error(reqError, { position: "top-right" });
     return null;
   }
 }
@@ -57,7 +57,7 @@ async function addProduct(
     return data;
   } catch (reqError) {
     if (typeof reqError === "string")
-      toast(reqError, { type: "error", position: "top-right" });
+      toast.error(reqError, { position: "top-right" });
     return null;
   }
 }
@@ -70,7 +70,7 @@ async function deleteProduct(productId: number): Promise<string | null> {
     return data;
   } catch (reqError) {
     if (typeof reqError === "string")
-      toast(reqError, { type: "error", position: "top-right" });
+      toast.error(reqError, { position: "top-right" });
     return null;
   }
 }

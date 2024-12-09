@@ -16,6 +16,7 @@ import { Button } from "@/ui/button";
 import { micra } from "@/utils/font";
 import classNames from "classnames";
 import { auth } from "@/utils/functions/request/api/auth";
+import toast, { Toaster } from "react-hot-toast";
 
 const formSchema = z.object({
   name: z.string(),
@@ -43,13 +44,23 @@ export default function Register() {
     password,
   }: z.infer<typeof formSchema>) => {
     console.log(name);
-    const token = await auth.login(username, password);
+    const data = await auth.register(username, password);
+    if (data) {
+      toast.success(`${data.message}, \n Поздравляем, ${name}!`);
+      location.replace("/");
+    }
   };
 
   return (
     <div className="h-[100vh] flex flex-col gap-8 items-center justify-center">
+      <Toaster position="top-right" toastOptions={{}} />
       <div className="flex max-w-[410px] items-center flex-col">
-        <h1 className={classNames(micra.className, "text-2xl text-center ")}>
+        <h1
+          className={classNames(
+            micra.className,
+            "text-xl sm:text-2xl text-center"
+          )}
+        >
           Зарегистрируйтесь
         </h1>
         <p>и получите скидку 20% на первый заказ</p>

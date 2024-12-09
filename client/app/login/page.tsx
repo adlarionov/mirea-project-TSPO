@@ -17,6 +17,7 @@ import { micra } from "@/utils/font";
 import classNames from "classnames";
 import { auth } from "@/utils/functions/request/api/auth";
 import { setToken } from "@/utils/functions/token";
+import Link from "next/link";
 
 const formSchema = z.object({
   username: z
@@ -58,7 +59,7 @@ export default function Login() {
       <h1
         className={classNames(
           micra.className,
-          "text-2xl text-center max-w-[350px]"
+          "textl-xl sm:text-2xl text-center max-w-[350px]"
         )}
       >
         Войти в личный кабинет
@@ -100,7 +101,7 @@ export default function Login() {
             Войти
           </Button>
           <Button variant={"ghost"} className="w-[100%] border border-black">
-            Зарегистрироваться
+            <Link href={"/register"}>Зарегистрироваться</Link>
           </Button>
         </form>
       </Form>

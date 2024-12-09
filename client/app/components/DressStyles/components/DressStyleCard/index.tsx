@@ -16,7 +16,7 @@ export default function DressStyleCard({
 }) {
   return (
     <div
-      className={classNames("relative h-[290px] hover:shadow-md", {
+      className={classNames("relative rounded-2xl h-[290px] hover:shadow-md", {
         "grid-cols-subgrid col-span-2": isWideCard,
       })}
     >
