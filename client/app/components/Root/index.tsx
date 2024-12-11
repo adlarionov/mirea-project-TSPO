@@ -23,8 +23,6 @@ export default function Root() {
     fetchData();
   }, []);
 
-  console.log(goodsData);
-
   return (
     <>
       <FirstOrderSale />

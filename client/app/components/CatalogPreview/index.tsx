@@ -15,19 +15,24 @@ export default function CatalogPreview({
   isSeparated?: boolean;
 }) {
   return (
-    <div className="mt-16 px-24">
+    <div className="mt-10 sm:mt-16 px-12 sm:px-24">
       <h1
-        className={classNames(micra.className, "mb-14 text-center text-[32px]")}
+        className={classNames(
+          micra.className,
+          "mb-4 sm:mb-14 sm:text-center text-2xl sm:text-[32px]"
+        )}
       >
         {title}
       </h1>
-      <div className="flex justify-between items-center mb-9">
+      <div className="flex flex-wrap sm:flex-nowrap justify-between items-center mb-9">
         {goods.map((good) => (
           <CatalogListItem good={good} key={good.id} />
         ))}
       </div>
       <div className="flex justify-center mb-16">
-        <Button className="px-8 py-6 rounded-full">Посмотреть все</Button>
+        <Button className="w-full sm:w-fit sm:px-8 py-6 rounded-full">
+          Посмотреть все
+        </Button>
       </div>
       {isSeparated ? <hr className="h-0.5 w-full bg-gray-100" /> : null}
     </div>

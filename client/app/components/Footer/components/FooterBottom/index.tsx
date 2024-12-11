@@ -14,7 +14,7 @@ export default function FooterBottom() {
   return (
     <div>
       <div className="h-[1px] w-full bg-gray-300 mb-6" />
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center flex-col sm:flex-row gap-2 sm:gap-0">
         <p className="text-gray-400 text-sm">
           Shop.co © 2000-{currentYear}, All Rights Reserved
         </p>

@@ -11,13 +11,16 @@ import DressStyleCard from "./components/DressStyleCard";
 
 export default function DressStyles() {
   return (
-    <div className="mx-24 px-16 py-20 bg-gray-100 rounded-2xl mb-20">
+    <div className="mx-4 sm:mx-24 px-4 sm:px-16 py-10 sm:py-20 bg-gray-100 rounded-2xl mb-8 sm:mb-20">
       <h1
-        className={classNames(micra.className, "text-[32px] text-center mb-16")}
+        className={classNames(
+          micra.className,
+          "text-2xl sm:text-[32px] text-center mb-8 sm:mb-16"
+        )}
       >
         Найди свой стиль
       </h1>
-      <div className="grid gap-5 grid-cols-3">
+      <div className="grid gap-5 grid-cols-1 sm:grid-cols-3">
         <DressStyleCard
           href={"/catalog?style=casual"}
           img={Casual}

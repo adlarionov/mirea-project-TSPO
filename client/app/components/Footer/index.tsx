@@ -13,11 +13,13 @@ import FooterBottom from "./components/FooterBottom";
 
 export default function Footer() {
   return (
-    <div className="w-full px-24 py-28 bg-gray-100 relative">
+    <div className="w-full px-4 sm:px-24 py-36 sm:py-28 bg-gray-100 relative">
       <Newsletter />
-      <div className=" grid gap-28 grid-cols-5 mb-12">
-        <div className="flex justify-between flex-col gap-4">
-          <h1 className={classNames(micra.className, "text-2xl")}>shop.co</h1>
+      <div className="flex flex-col sm:flex-row mb-12">
+        <div className="flex justify-between flex-col gap-4 sm:w-1/5 mb-4 sm:mb-0">
+          <h1 className={classNames(micra.className, "text-3xl sm:text-2xl")}>
+            shop.co
+          </h1>
           <p className="text-sm text-gray-400">
             У нас есть одежда, которая соответствует вашему стилю и которую вы с
             гордостью носите. От женщин к мужчинам.
@@ -31,57 +33,68 @@ export default function Footer() {
             ]}
           />
         </div>
-        <FooterColumn
-          items={[
-            { description: "О нас", link: "/company/about" },
-            { description: "Особенности", link: "/company/features" },
-            { description: "Работы", link: "/company/works" },
-            { description: "Карьера", link: "/company/career" },
-          ]}
-          title="Компания"
-        />
-        <FooterColumn
-          items={[
-            {
-              description: "Помощь Покупателей",
-              link: "/help/customer_support",
-            },
-            { description: "Детали Доставки", link: "/help/delivery_details" },
-            {
-              description: "Условия Использования",
-              link: "/help/terms_and_conditions",
-            },
-            {
-              description: "Политика Приватности",
-              link: "/help/privacy_policy",
-            },
-          ]}
-          title="Помощь"
-        />
-        <FooterColumn
-          items={[
-            { description: "Аккаунт", link: "/faq/account" },
-            { description: "Условия Доставки", link: "/faq/manage_deliveries" },
-            { description: "Заказы", link: "/faq/orders" },
-            { description: "Оплата", link: "/faq/payments" },
-          ]}
-          title="FAQ"
-        />
-        <FooterColumn
-          items={[
-            { description: "Бесплатные Книги", link: "/resources/free_ebooks" },
-            {
-              description: "Инструменты Разработки",
-              link: "/resources/dev_tools",
-            },
-            { description: "Как Вести Блог", link: "/resources/how_to_blog" },
-            {
-              description: "Youtube Плейлист",
-              link: "/resources/youtube_playlist",
-            },
-          ]}
-          title="Ресурсы"
-        />
+        <div className="grid gap-4 grid-cols-2 sm:gap-28 sm:grid-cols-4 sm:w-4/5">
+          <FooterColumn
+            items={[
+              { description: "О нас", link: "/company/about" },
+              { description: "Особенности", link: "/company/features" },
+              { description: "Работы", link: "/company/works" },
+              { description: "Карьера", link: "/company/career" },
+            ]}
+            title="Компания"
+          />
+          <FooterColumn
+            items={[
+              {
+                description: "Помощь Покупателей",
+                link: "/help/customer_support",
+              },
+              {
+                description: "Детали Доставки",
+                link: "/help/delivery_details",
+              },
+              {
+                description: "Условия Использования",
+                link: "/help/terms_and_conditions",
+              },
+              {
+                description: "Политика Приватности",
+                link: "/help/privacy_policy",
+              },
+            ]}
+            title="Помощь"
+          />
+          <FooterColumn
+            items={[
+              { description: "Аккаунт", link: "/faq/account" },
+              {
+                description: "Условия Доставки",
+                link: "/faq/manage_deliveries",
+              },
+              { description: "Заказы", link: "/faq/orders" },
+              { description: "Оплата", link: "/faq/payments" },
+            ]}
+            title="FAQ"
+          />
+          <FooterColumn
+            items={[
+              {
+                description: "Бесплатные Книги",
+                link: "/resources/free_ebooks",
+              },
+              {
+                description: "Инструменты Разработки",
+                link: "/resources/dev_tools",
+              },
+              { description: "Как Вести Блог", link: "/resources/how_to_blog" },
+              {
+                description: "Youtube Плейлист",
+                link: "/resources/youtube_playlist",
+              },
+            ]}
+            title="Ресурсы"
+          />
+        </div>
       </div>
       <FooterBottom />
     </div>

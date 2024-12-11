@@ -9,7 +9,7 @@ export default function HeroCard({
 }) {
   return (
     <div>
-      <h3 className="font-bold text-4xl">{title}</h3>
+      <h3 className="font-bold text-2xl sm:text-4xl">{title}</h3>
       <p className="text-sm opacity-60">{subtitle}</p>
     </div>
   );
