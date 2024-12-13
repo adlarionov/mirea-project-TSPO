@@ -11,7 +11,7 @@ import DressStyleCard from "./components/DressStyleCard";
 
 export default function DressStyles() {
   return (
-    <div className="mx-4 sm:mx-24 px-4 sm:px-16 py-10 sm:py-20 bg-gray-100 rounded-2xl mb-8 sm:mb-20">
+    <div className="mx-4 md:mx-24 px-4 md:px-16 py-10 md:py-20 bg-gray-100 rounded-2xl mb-8 md:mb-20">
       <h1
         className={classNames(
           micra.className,

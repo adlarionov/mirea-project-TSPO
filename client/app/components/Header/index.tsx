@@ -48,12 +48,12 @@ export default function Header() {
   );
 
   return (
-    <header className="flex items-center justify-between sm:justify-normal px-4 sm:px-24 py-9 gap-2 sm:gap-10 w-full">
-      <div className="flex sm:inline gap-4 relative">
+    <header className="flex items-center justify-between md:justify-normal px-4 sm:px-8 md:px-24 py-9 gap-2 sm:gap-4 md:gap-10 w-full">
+      <div className="flex md:inline gap-4 relative">
         <Image
           src={Burger}
           alt={Burger}
-          className="sm:hidden cursor-pointer"
+          className="md:hidden cursor-pointer"
           onClick={() => setIsMobileMenuOpened(!isMobileMenuOpened)}
         />
         {isMobileMenuOpened ? (
@@ -65,7 +65,7 @@ export default function Header() {
         ) : null}
         {isInputVisibleOnMobile ? null : <LogoTitle fontSize={24} />}
       </div>
-      <div className="hidden sm:flex items-center gap-6">
+      <div className="hidden md:flex items-center gap-6">
         <Dropdown
           dropdownButton={DropdownButton}
           isDropDownOpened={isDropDownOpened}
@@ -79,7 +79,7 @@ export default function Header() {
       <Input
         type="text"
         placeholder="Найти продукт..."
-        className={classNames("sm:inline", {
+        className={classNames("md:inline", {
           "min-w-[300px]": !isInputVisibleOnMobile,
           hidden: !isInputVisibleOnMobile,
         })}
@@ -87,11 +87,11 @@ export default function Header() {
       <div className="flex items-center gap-3">
         {isInputVisibleOnMobile ? (
           <div onClick={() => setIsInputVisibleOnMobile(false)}>
-            <X className="sm:hidden" />
+            <X className="md:hidden" />
           </div>
         ) : (
           <div onClick={() => setIsInputVisibleOnMobile(true)}>
-            <Search className="sm:hidden" />
+            <Search className="md:hidden" />
           </div>
         )}
         <Link href={redirectLink ?? "/cart"}>

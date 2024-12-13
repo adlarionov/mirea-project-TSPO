@@ -16,7 +16,7 @@ export default function Hero() {
     <div className={`flex items-center justify-between`}>
       <div
         className={classNames(
-          "relative min-h-[560px] sm:min-h-[662px] h-full w-full",
+          "relative min-h-[560px] md:min-h-[662px] h-full w-full",
           classes.bgHero
         )}
       >
@@ -24,17 +24,17 @@ export default function Hero() {
           src={Star}
           alt="star icon"
           className={classNames(
-            "absolute left-[80%] sm:left-[52%] top-[65%] sm:top-[40%] sm:w-[5%]"
+            "absolute left-[80%] sm:left-[59%] md:left-[52%] top-[72%] md:top-[40%] md:w-[5%]"
           )}
         />
         <Image
           src={Star}
           alt="star icon"
           className={classNames(
-            "absolute left-[85%] top-[10%] w-[11%] sm:w-[8%]"
+            "absolute left-[85%] top-[5%] md:top-[10%] w-[11%] md:w-[8%]"
           )}
         />
-        <div className="mt-10 ml-4 sm:mt-24 sm:ml-28">
+        <div className="mt-10 ml-4 md:mt-24 md:ml-28">
           <h1
             className={classNames(
               "text-3xl sm:text-[64px] sm:leading-[64px] max-w-[40%] mb-4 sm:mb-8",
@@ -43,12 +43,12 @@ export default function Hero() {
           >
             Одежда для каждого
           </h1>
-          <p className="text-sm sm:text-base sm:max-w-[40%] opacity-60 mb-4 sm:mb-8">
+          <p className="text-sm sm:text-base md:max-w-[40%] opacity-60 mb-4 md:mb-8">
             Просмотрите наш разнообразный ассортимент тщательно созданной
             одежды, призванной подчеркнуть вашу индивидуальность и удовлетворить
             ваше чувство стиля.
           </p>
-          <Button className="w-[98%] sm:w-fit sm:px-16 rounded-full mb-12">
+          <Button className="w-[98%] md:w-fit md:px-16 rounded-full mb-12">
             Купить
           </Button>
           <div className="items-center justify-center sm:justify-normal flex-wrap sm:flex-nowrap flex gap-4 sm:gap-8">

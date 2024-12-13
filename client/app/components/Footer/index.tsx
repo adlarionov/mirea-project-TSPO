@@ -13,10 +13,10 @@ import FooterBottom from "./components/FooterBottom";
 
 export default function Footer() {
   return (
-    <div className="w-full px-4 sm:px-24 py-36 sm:py-28 bg-gray-100 relative">
+    <div className="w-full px-4 lg:px-24 py-36 lg:py-28 bg-gray-100 relative">
       <Newsletter />
-      <div className="flex flex-col sm:flex-row mb-12">
-        <div className="flex justify-between flex-col gap-4 sm:w-1/5 mb-4 sm:mb-0">
+      <div className="flex flex-col lg:flex-row mb-12">
+        <div className="flex justify-between flex-col gap-4 lg:w-1/5 mb-4 lg:mb-0">
           <h1 className={classNames(micra.className, "text-3xl sm:text-2xl")}>
             shop.co
           </h1>
@@ -33,7 +33,7 @@ export default function Footer() {
             ]}
           />
         </div>
-        <div className="grid gap-4 grid-cols-2 sm:gap-28 sm:grid-cols-4 sm:w-4/5">
+        <div className="grid gap-4 grid-cols-2 lg:gap-28 lg:grid-cols-4 lg:w-4/5">
           <FooterColumn
             items={[
               { description: "О нас", link: "/company/about" },

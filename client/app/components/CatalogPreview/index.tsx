@@ -15,16 +15,16 @@ export default function CatalogPreview({
   isSeparated?: boolean;
 }) {
   return (
-    <div className="mt-10 sm:mt-16 px-12 sm:px-24">
+    <div className="mt-10 md:mt-16 px-12 md:px-24">
       <h1
         className={classNames(
           micra.className,
-          "mb-4 sm:mb-14 sm:text-center text-2xl sm:text-[32px]"
+          "mb-4 sm:mb-8 md:mb-14 sm:text-center text-2xl sm:text-3xl md:text-[32px]"
         )}
       >
         {title}
       </h1>
-      <div className="flex flex-wrap sm:flex-nowrap justify-between items-center mb-9">
+      <div className="flex flex-wrap lg:flex-nowrap justify-between items-center mb-9 gap-y-8 lg:gap-y-0">
         {goods.map((good) => (
           <CatalogListItem good={good} key={good.id} />
         ))}
